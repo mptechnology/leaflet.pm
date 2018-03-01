@@ -159,7 +159,7 @@ Edit.Line = Edit.extend({
         }
 
         const map = this._map;
-        const coords = this._layer.getLatLngs();
+        const coords = this._flattenCoordArrays(this._layer.getLatLngs());
 
         // cleanup old ones first
         if (this._markerGroup) {
